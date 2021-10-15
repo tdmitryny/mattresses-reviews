@@ -78,16 +78,33 @@
 .date{
     font-size: 1.4rem;
     font-weight: 500;
+    padding-top: 1.2rem;
 }
 /**************************/
 /* OFFERS */
 /**************************/
 
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 1.6rem;
+    margin-bottom: 5.8rem;
+
+}
+.logo__brand{
+   width: 100%;
+}
+
+.img-size{
+    width: 11.8rem;
+    height: 5rem;
+}
+
 .offers{
     max-width: 100%;
     border-radius: .6rem;
     box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.25);
-    margin-bottom: 5.8rem;
     min-height: 13.2rem;
     background-color: #fff;
     padding-right: 4rem ;
@@ -101,8 +118,93 @@
 }
 
 
-.img__box{
+.img__box--one{
     background-image: url('/img/dreamcloud_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__box--two{
+    background-image: url('/img/nectar_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__box--third{
+    background-image: url('/img/Puffy_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__box--fourth{
+    background-image: url('/img/cocoon_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__box--fifth{
+    background-image: url('/img/saatva_2.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__box--sixth{
+    background-image: url('/img/ghost\ _1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__box--seventh{
+    background-image: url('/img/layala_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__box--eighth{
+    background-image: url('/img/awara_1.jpg');
+    background-position: center;
+    background-size: cover;
+    width:17.6rem;
+    height:13.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__box--ninth{
+    background-image: url('/img/levelsleep_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -221,6 +323,7 @@ padding-bottom: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;
     width: 15.7rem;
+    cursor: pointer;
 }
 
 .read__more{
@@ -238,4 +341,13 @@ padding-bottom: 2rem;
     height: 1rem;
     top: 0.3rem;
     right: 1.3rem;
+}
+
+
+/**************************/
+/* OFFERS  DESCRIPTION*/
+/**************************/
+
+.reviews__description.active{
+    display: none;
 }
