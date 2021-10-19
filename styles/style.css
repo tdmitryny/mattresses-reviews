@@ -608,3 +608,59 @@ padding-bottom: 2rem;
     border-radius: .9rem;
     cursor: pointer;
 }
+
+
+/**************************/
+/* BUTTON AND DESCRIPTION*/
+/**************************/
+
+.btn-more{
+    width: 17.1rem;
+    height: 3.8rem;
+    border: none;
+    border-radius: .4rem;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #001780;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5rem;
+    cursor: pointer;
+
+}
+
+
+.title__about{
+    max-width: 48rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title__about-review{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.title__about-review::before{
+    content: '';
+    position: absolute;
+    background-image: url('/img/mark3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 3.5rem;
+    height: 3.1rem;
+    top: -0.40rem;
+    left: 5.3rem;
+    
+}
+
+.desc__about-review{
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.3;
+}
