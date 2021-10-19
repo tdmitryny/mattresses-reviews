@@ -335,6 +335,7 @@ padding-bottom: 2rem;
     font-weight: 450;
     color: #8F8E8E;
     position: relative;
+    cursor: pointer;
 }
 
 .read__more::after{
@@ -345,6 +346,19 @@ padding-bottom: 2rem;
     height: 1rem;
     top: 0.3rem;
     right: 1.3rem;
+    
+}
+
+.read__more.active::after{
+    position: absolute;
+    content: '';
+    background-image: url('/img/arrow-right.svg');
+    width: 1.3rem;
+    height: 1rem;
+    top: 0.3rem;
+    right: 1.3rem;
+    transform: rotate(90deg);
+    transition:all .3s ease;
 }
 
 
@@ -352,9 +366,28 @@ padding-bottom: 2rem;
 /* OFFERS  DESCRIPTION*/
 /**************************/
 
-.reviews__description.active{
-    display: none;
+
+.description{
+    display: block;
+    transition: all .5s ease-out;
+    
 }
+
+.hidden {
+    display: none;
+  }
+
+/* .hidden {
+    display: none;s
+  }
+
+.visuallyhidden {
+    opacity: 0;
+    transition: all .5s ease-out;
+  } */
+
+  
+
 
 .reviews__description{
     max-width: 118.2rem;
@@ -366,7 +399,7 @@ padding-bottom: 2rem;
     margin-top: -2rem;
     display: flex;
     justify-content: space-between;
-   
+    
 }
 
 .reviews__text{
@@ -437,11 +470,14 @@ padding-bottom: 2rem;
 }
 
 .nectar__logo{
-    max-width: 13.2rem;
+    max-width: 11.2rem;
+    /* max-width: 13.2rem; */
     height: 3rem;
+    margin-left: 4rem;
+    
 }
 .logo__review{
-    width: 100%;
+    width: 80%;
 }
 
 .rating__line{
@@ -465,10 +501,110 @@ padding-bottom: 2rem;
 }
 
 
-.review__line{
+
+/* RATING LINE*/
+
+.first__line,
+.second__line,
+.third__line,
+.fourth__line{
     width: 80%;
     height: .5rem;
     background-color: #E0E0E0;
     border-radius: .3rem;
+    position: relative;
 }
 
+.first__line::after{
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: .5rem;
+    background-color: #F6BD25;
+    border-radius: .3rem;
+}
+
+.second__line::after{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: .5rem;
+    background-color: #F6BD25;
+    border-radius: .3rem;
+}
+
+.third__line::after{
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: .5rem;
+    background-color: #F6BD25;
+    border-radius: .3rem;
+}
+.fourth__line::after{
+    position: absolute;
+    content: '';
+    width:70%;
+    height: .5rem;
+    background-color: #F6BD25;
+    border-radius: .3rem;
+}
+
+/* TEXT LINE*/
+.first__line::before{
+    position: absolute;
+    content: 'VALUE FOR MONEY';
+    font-size: .9rem;
+    color: #000;
+    top: -1rem;
+}
+
+.second__line::before{
+    position: absolute;
+    content: 'BODY SUPPORT';
+    font-size: .9rem;
+    color: #000;
+    top: -1rem;
+}
+
+.third__line::before{
+    position: absolute;
+    content: 'COMFORT';
+    font-size: .9rem;
+    color: #000;
+    top: -1rem;
+
+}
+
+.fourth__line::before{
+    position: absolute;
+    content: 'CUSTOMER SUPPORT';
+    font-size: .9rem;
+    color: #000;
+    top: -1rem;
+
+}
+
+
+.slogan__review{
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.box__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__blue{
+    border: none;
+    width: 12.0rem;
+    height: 3.6rem;
+    background-color: #001780;
+    color: #fff;
+    border-radius: .9rem;
+    cursor: pointer;
+}
