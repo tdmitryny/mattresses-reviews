@@ -6,9 +6,7 @@ const boxesContainer = document.querySelector('.wrapper');
 
 
 
-
-
-boxesContainer.addEventListener('click', function (e) {
+const openDesc = function (e) {
     let clicked = e.target.closest('.read__more');
     console.log(clicked);
     if (!clicked) return;
@@ -28,11 +26,46 @@ boxesContainer.addEventListener('click', function (e) {
 
 
     //Activate content
-    document.querySelector(`.description--${clicked.dataset.tab}`).classList.remove('hidden');
+    const content = document.querySelector(`.description--${clicked.dataset.tab}`)
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+    } else {
+        content.classList.add('hidden');
+    }
+}
+
+
+addEventListener('click', openDesc);
 
 
 
-});
+
+
+
+
+// boxesContainer.addEventListener('click', function (e) {
+//     let clicked = e.target.closest('.read__more');
+//     console.log(clicked);
+//     if (!clicked) return;
+
+//     //Add clear class
+//     reaMore.forEach(read => {
+//         read.classList.remove('active');
+//     });
+//     //Add active arrow
+//     clicked.classList.add('active');
+
+
+//     //Add hidden class
+//     description.forEach(c => {
+//         c.classList.add('hidden')
+//     })
+
+
+//     //Activate content
+//     document.querySelector(`.description--${clicked.dataset.tab}`).classList.remove('hidden');
+
+// });
 
 
 
