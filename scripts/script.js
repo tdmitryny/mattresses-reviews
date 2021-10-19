@@ -5,7 +5,7 @@ const description = document.querySelectorAll('.description');
 const boxesContainer = document.querySelector('.wrapper');
 
 
-
+//Drop down mdescription
 const openDesc = function (e) {
     let clicked = e.target.closest('.read__more');
     console.log(clicked);
