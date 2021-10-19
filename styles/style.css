@@ -664,3 +664,21 @@ padding-bottom: 2rem;
     color: #000;
     line-height: 1.3;
 }
+
+.carussel{
+    margin-bottom: 10rem;
+}
+
+
+.carrusel__inner{
+    background-color: #fff;
+    height: 14.5rem;
+
+}
+
+.carussel__img{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 14.9rem;
+    height: 5.5rem;
+}

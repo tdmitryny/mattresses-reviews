@@ -24,7 +24,6 @@ const openDesc = function (e) {
         c.classList.add('hidden')
     })
 
-
     //Activate content
     const content = document.querySelector(`.description--${clicked.dataset.tab}`)
     if (content.classList.contains('hidden')) {
@@ -34,8 +33,9 @@ const openDesc = function (e) {
     }
 }
 
-
 addEventListener('click', openDesc);
+
+
 
 
 
