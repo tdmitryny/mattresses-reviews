@@ -1,12 +1,13 @@
 const reaMore = document.querySelectorAll('.read__more');
 const dropDescription = document.querySelector('.reviews__description');
-//const description = document.getElementsByClassName('description');
 const description = document.querySelectorAll('.description');
 const boxesContainer = document.querySelector('.wrapper');
+const seeMore = document.querySelector('.btn-more');
 
 
-//Drop down mdescription
-boxesContainer.addEventListener('click', function (e) {
+
+//Drop down description
+const dropContent = function (e) {
     let clicked = e.target.closest('.read__more');
     console.log(clicked);
     if (!clicked) return;
@@ -14,12 +15,41 @@ boxesContainer.addEventListener('click', function (e) {
     //Add active arrow
     clicked.classList.toggle('active');
 
-
     //Activate content
     const content = document.querySelector(`.description--${clicked.dataset.tab}`)
     content.classList.toggle('hidden')
 
-})
+};
+
+boxesContainer.addEventListener('click', dropContent)
+
+
+
+//Button see more
+let currentItem = 4;
+
+const moreContent = function (e) {
+    const elementList = [...document.querySelectorAll('.wrapper .wrapper__offer')]
+    for (i = currentItem; i < currentItem + 4; i++) {
+        if (elementList[i]) {
+            elementList[i].style.display = 'block';
+        }
+    }
+    currentItem += 4;
+    if (currentItem >= elementList.length) {
+        event.target.style.display = 'none';
+    }
+
+}
+seeMore.addEventListener('click', moreContent)
+
+
+
+
+
+
+
+
 
 
 
