@@ -17,11 +17,7 @@ boxesContainer.addEventListener('click', function (e) {
 
     //Activate content
     const content = document.querySelector(`.description--${clicked.dataset.tab}`)
-    if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
-    } else {
-        content.classList.add('hidden');
-    }
+    content.classList.toggle('hidden')
 
 })
 
