@@ -110,6 +110,8 @@
     min-height: 13.2rem;
     background-color: #fff;
     padding-right: 4rem;
+    position: relative;
+    bottom: 0.2rem;
      z-index: 999; 
     
 }
@@ -372,6 +374,9 @@ padding-bottom: 2rem;
     display: block;
     transition: all .5s ease-out;
     z-index: -999;
+    /* position: relative;
+    top: 0.2rem */
+;
     
     
 }
@@ -691,6 +696,7 @@ padding-bottom: 2rem;
     width: 14.9rem;
     height: 5.5rem;
 }
+
 
 /* Show more boxes */
 

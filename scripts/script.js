@@ -29,13 +29,16 @@ boxesContainer.addEventListener('click', dropContent)
 let currentItem = 4;
 
 const moreContent = function (e) {
-    const elementList = [...document.querySelectorAll('.wrapper .wrapper__offer')]
-    for (i = currentItem; i < currentItem + 4; i++) {
+    const elementList = document.querySelectorAll('.wrapper__offer');
+    for (i = currentItem; i < currentItem + 3; i++) {
         if (elementList[i]) {
             elementList[i].style.display = 'block';
         }
     }
-    currentItem += 4;
+    currentItem += 3;
+
+
+    // Load more button will be hidden after list fully loaded
     if (currentItem >= elementList.length) {
         event.target.style.display = 'none';
     }
