@@ -672,9 +672,15 @@ padding-bottom: 2rem;
 
 .carrusel__inner{
     background-color: #fff;
-    height: 14.5rem;
+    height: 14.5rem; 
+    
 
 }
+.background{
+    background-image: linear-gradient(
+-90deg,#e3e9ee 10%,hsla(0,0%,100%,0) 30%,hsla(0,0%,100%,0) 70%,#e3e9ee 90%);
+}
+
 
 .carussel__img{
     display: inline-flex;

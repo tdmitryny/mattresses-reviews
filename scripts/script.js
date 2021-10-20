@@ -6,23 +6,14 @@ const boxesContainer = document.querySelector('.wrapper');
 
 
 //Drop down mdescription
-const openDesc = function (e) {
+boxesContainer.addEventListener('click', function (e) {
     let clicked = e.target.closest('.read__more');
     console.log(clicked);
     if (!clicked) return;
 
-    //Add clear class
-    reaMore.forEach(read => {
-        read.classList.remove('active');
-    });
     //Add active arrow
-    clicked.classList.add('active');
+    clicked.classList.toggle('active');
 
-
-    //Add hidden class
-    description.forEach(c => {
-        c.classList.add('hidden')
-    })
 
     //Activate content
     const content = document.querySelector(`.description--${clicked.dataset.tab}`)
@@ -31,9 +22,8 @@ const openDesc = function (e) {
     } else {
         content.classList.add('hidden');
     }
-}
 
-addEventListener('click', openDesc);
+})
 
 
 
