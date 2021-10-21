@@ -803,29 +803,24 @@ padding-bottom: 2rem;
     font-size: 1.3rem;
     color: #000;
     line-height: 1.2;
-    
-    
    
 }
 
-.questions__content .questions__content-inner{
+.questions__content {
     height: 0;
     overflow: hidden;
-    transition: 0.2s; 
+    transition: 0.5s; 
+}
+.questions__content-inner{
+    display: block;
+    padding: 2.2rem 4rem 2rem 2.9rem;
 }
 
-/* .questions__content .questions__content-inner{
-    font-size: 1.3rem;
-    color: #000;
-    line-height: 1.2; 
-    
-    
-} */
 
-.questions__content .questions__content-inner.active{
+.questions__content.active{
     height: 10rem;
     overflow: hidden;
     transition: 0.5s;
-    padding: 2.2rem 4rem 2rem 2.9rem; 
+    /* padding: 2.2rem 4rem 2rem 2.9rem;  */
 
 }

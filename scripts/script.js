@@ -50,7 +50,7 @@ seeMore.addEventListener('click', moreContent)
 //Frequently Asked Questions
 
 const questionBtn = document.querySelectorAll('.questions__btn');
-const questionContent = document.querySelectorAll('.questions__content-inner');
+const questionContent = document.querySelectorAll('.questions__content');
 
 
 for (let i = 0; i < questionContent.length; i++) {
