@@ -47,6 +47,28 @@ const moreContent = function (e) {
 seeMore.addEventListener('click', moreContent)
 
 
+//Frequently Asked Questions
+
+const questionBtn = document.querySelectorAll('.questions__btn');
+const questionContent = document.querySelectorAll('.questions__content-inner');
+
+
+for (let i = 0; i < questionContent.length; i++) {
+
+    questionBtn[i].addEventListener('click', () => {
+        questionContent[i].classList.toggle('active');
+        questionBtn[i].classList.toggle('active');
+    })
+
+}
+
+
+
+
+
+
+
+
 
 //Live Date header 
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];

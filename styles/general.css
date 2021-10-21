@@ -19,7 +19,10 @@ body{
     font-weight: 400;
     background-color: #F6F9FC
 }
-
+main{
+    padding: 0;
+    margin: 0;
+}
 .container{
     max-width: 120rem;
     margin: 0 auto;
