@@ -824,3 +824,34 @@ padding-bottom: 2rem;
     /* padding: 2.2rem 4rem 2rem 2.9rem;  */
 
 }
+
+
+.about__mattresses{
+    background-color: #fff;
+    height: 70rem;
+}
+
+.about__content{
+    padding: 5rem 0 5rem 0;
+}
+.about__para{
+    margin: 0 auto;
+    
+}
+
+.aboat__para--title {
+    margin: 2rem 0 2rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+}
+.aboat__para--inner{
+    font-size: 1.3rem;
+    color: #000;
+    line-height: 1.5;
+}
+
+.about__para{
+    max-width: 95.4rem;
+
+}

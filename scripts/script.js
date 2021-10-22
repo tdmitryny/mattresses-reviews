@@ -5,8 +5,6 @@ const boxesContainer = document.querySelector('.wrapper');
 const seeMore = document.querySelector('.btn-more');
 
 
-
-
 //Drop down description
 const dropContent = function (e) {
     let clicked = e.target.closest('.read__more');
@@ -26,11 +24,12 @@ boxesContainer.addEventListener('click', dropContent)
 
 
 //Button see more
-let currentItem = 4;
+let currentItem = 3;
 
 const moreContent = function (e) {
     const elementList = document.querySelectorAll('.wrapper__offer');
     for (i = currentItem; i < currentItem + 3; i++) {
+        console.log(i);
         if (elementList[i]) {
             elementList[i].style.display = 'block';
         }
@@ -48,7 +47,6 @@ seeMore.addEventListener('click', moreContent)
 
 
 //Frequently Asked Questions
-
 const questionBtn = document.querySelectorAll('.questions__btn');
 const questionContent = document.querySelectorAll('.questions__content');
 
