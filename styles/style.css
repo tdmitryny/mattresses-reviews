@@ -828,7 +828,7 @@ padding-bottom: 2rem;
 
 .about__mattresses{
     background-color: #fff;
-    height: 70rem;
+    min-height: 70rem;
 }
 
 .about__content{
@@ -853,5 +853,54 @@ padding-bottom: 2rem;
 
 .about__para{
     max-width: 95.4rem;
+
+}
+
+
+/**************************/
+/* FOOTER SECTION*/
+/**************************/
+
+.footer{
+    background-color: #001780;
+}
+
+.footer__inner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 8.3rem 0 7.2rem 0;
+
+}
+
+.footer__para{
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.lower__footer{
+    min-height:6.4rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center; */
+    
+}
+
+.copy{
+    
+    display: inline;
+    padding: 2rem;
+    background-color: #fff;
+    font-size: 1.3rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 
 }
