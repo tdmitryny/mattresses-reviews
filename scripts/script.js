@@ -79,7 +79,7 @@ const dateUpdates = function (day, mounth, year) {
 dateUpdates(date, stringMonth, year);
 
 
-//Year update
+//Year update footer
 const bottomYear = function () {
     const yearRight = document.getElementById('copy');
     const yearUpdate = new Date().getFullYear();
