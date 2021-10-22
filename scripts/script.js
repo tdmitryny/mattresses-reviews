@@ -62,14 +62,6 @@ for (let i = 0; i < questionContent.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
 //Live Date header 
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const mounths = new Date();
@@ -86,5 +78,14 @@ const dateUpdates = function (day, mounth, year) {
 
 dateUpdates(date, stringMonth, year);
 
+
+//Year update
+const bottomYear = function () {
+    const yearRight = document.getElementById('copy');
+    const yearUpdate = new Date().getFullYear();
+    yearRight.innerHTML = `Copyright <html>&copy;</html> ${yearUpdate}`;
+}
+
+bottomYear();
 
 
