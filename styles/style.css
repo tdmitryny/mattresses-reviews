@@ -870,7 +870,7 @@ padding-bottom: 2rem;
     grid-template-columns: 1fr 2fr;
     gap: 2.5rem;
     align-items: center;
-    padding: 8.3rem 0 7.2rem 0;
+    padding: 7.3rem 0 7.2rem 0;
 
 }
 
@@ -903,4 +903,14 @@ padding-bottom: 2rem;
     text-decoration: none;
     cursor: pointer;
 
+}
+
+
+
+
+
+
+.here[data-try="2424"]{
+
+    font-size: 23rem;
 }
