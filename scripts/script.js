@@ -43,7 +43,29 @@ const moreContent = function (e) {
     }
 
 }
-seeMore.addEventListener('click', moreContent)
+seeMore.addEventListener('click', moreContent);
+
+// Live photo Carousel
+const carouselItem = document.querySelectorAll('.carussel__img');
+
+
+setInterval(() => {
+    carouselItem.forEach((img, i) => {
+
+        img.style.translateX = 'calc(-250px * 9)'
+
+    });
+
+
+}, 1000);
+
+
+
+
+
+
+
+
 
 
 //Frequently Asked Questions
