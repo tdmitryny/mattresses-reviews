@@ -10,6 +10,7 @@
 html{
     /* 10/16px * 100 */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -17,7 +18,8 @@ body{
     line-height: 1;
     color: #555;
     font-weight: 400;
-    background-color: #F6F9FC
+    background-color: #F6F9FC;
+    overflow-x: hidden;
 }
 main{
     padding: 0;

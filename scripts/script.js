@@ -111,4 +111,20 @@ const bottomYear = function () {
 bottomYear();
 
 
+//Drop down menu
+const navMenu = document.querySelector('.nav__menu');
+const mobMenu = document.querySelector('.mobile__menu');
 
+
+function burgerMenu() {
+
+    if (!navMenu.classList.contains('active') && !mobMenu.classList.contains('active')) {
+        navMenu.classList.add('active');
+        mobMenu.classList.add('active');
+    } else {
+        navMenu.classList.remove('active');
+        mobMenu.classList.remove('active');
+    }
+}
+
+mobMenu.addEventListener('click', burgerMenu)

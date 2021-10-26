@@ -1,11 +1,257 @@
 /* 1344px/16=84em. We use em on query */ 
 
+
 /********************/
 /* BELOW 930px */
 /********************/
 @media(max-width:58em){
+    
+    html{
+        font-size: 56.25%;
+    }
+
+    .nav__menu{
+        position: relative;
+        
+        top: 13rem;
+        right: -6rem;
+        /* height: 100vh; */
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
+        padding: 3.5rem 0 4rem 3rem;
+        box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.25);
+        transition: ease .5s;
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav__menu.active{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        
+    }
+    .mobile__menu{
+        display: block;
+        position: relative;
+        top: -12rem;
+        right: -10rem;
+        width: 10rem;
+        height: 2rem;
+    }
+    .mobile__menu .mobile__line{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3rem;
+        height: .2rem;
+        background-color: #000; 
+    }
+
+    .mobile__menu.active .mobile__line{
+        transform: scale(0);
+    }
+
+    
+
+    .mobile__menu::after,
+    .mobile__menu::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 3rem;
+        height: .2rem;
+        background-color: #000;
+        
+    }
+
+    .mobile__menu::before{
+        top: .7rem;
+    }
+    .mobile__menu::after{
+        bottom: 0.4rem;
+    }
+
+    .mobile__menu.active::after{
+        content: '';
+        opacity: 1;
+        position: absolute;
+        bottom: .5rem;
+        width: 3rem;
+        height: .2rem;
+        background-color: #000;
+        transform: rotate(45deg);
+        transition: ease .3s;
+    }
+    
+    .mobile__menu.active::before{
+        content: '';
+        opacity: 1;
+        position: absolute;
+        top: 1.3rem;
+        width: 3rem;
+        height: .2rem;
+        background-color: #000;
+        transform: rotate(-45deg);
+        transition: ease .3s;
+    }
+
+
+    /* Title */
+    .title__top{
+        max-width: 24rem;
+        line-height: 1.3;
+    }
+
+    .logo__brand{
+        width: 70%;
+    }
+
 
 
     
+    
+
+}
+
+
+/********************/
+/* BELOW 770px */
+/********************/
+@media(max-width:48em){
+    html{
+        font-size: 50.25%;
+    }
+    .title__about{
+        line-height: 1.3;
+    }
+    .star{
+        width: 2rem;
+        height: 2rem;
+    }
+
+  
+
+}
+
+
+/********************/
+/* BELOW 685px */
+/********************/
+@media(max-width:43em){
+
+    .offers{
+        padding-right: 0;
+    }
+
+   .offer__box{
+    
+    flex-direction: column;
+    align-items: center;   
+       
+   }
+
+   .offer__sale{
+       display: none;
+   }
+   .terms__inner{
+       display: none;
+   }
+
+   .link__logo{
+       opacity: 1;
+   }
+
+
+   .number{
+       margin-left: 5rem;
+       z-index: 999;
+   }
+   .img__box--one,
+   .img__box--two,
+   .img__box--third,
+   .img__box--fourth,
+   .img__box--fifth,
+   .img__box--sixth,
+   .img__box--seventh,
+   .img__box--eighth,
+   .img__box--ninth{
+       width: 100%;
+       height: 7.7rem;
+       justify-content: start;
+       background-position: center;
+       background-repeat: no-repeat;
+       border-radius: 6px 6px 0px 0px;
+       position: relative;
+       filter: brightness(50%);
+   }
+
+
+   .stars{
+       content: '';
+       position: absolute;
+       top: 2rem;
+       right: 5rem;
+   }
+
+   .star{
+       width: 3rem;
+       height: 3rem;
+   }
+
+   .rating{
+    width: 3rem;
+    height:3rem;
+    font-size: 1.4rem;
+    background-color: #001780;
+    color: #fff;
+   }
+
+   .img__box--one{
+       
+        background-image: url('/img/DreamCloudBig.jpeg');
+   }
+   .img__box--two{
+       background-image: url('/img/nectarBig.jpeg');
+   }
+   .img__box--third{
+    background-image: url('/img/puffyBif.jpeg');
+   }
+   .img__box--fouth{
+       background-image: url('/img/cocoonBig.jpg');
+    }
+    .img__box--fifth{
+        background-image: url('/img/saatvaBig.jpeg');
+    }
+    .img__box--sixth{
+        background-image: url('/img/ghosteBig.jpeg');
+    }
+    .img__box--seventh{
+        background-image: url('/img/layalaBig.jpeg');
+    }
+    .img__box--eighth{
+        background-image: url('/img/awaraBig.jpeg');
+    }
+    .img__box--ninth{
+        background-image: url('/img/levelSleepBig.jpeg');
+    }
+
+    .logo__brand{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .read__more{
+        padding-bottom: 2rem;
+    }
+    
+
+
 
 }
