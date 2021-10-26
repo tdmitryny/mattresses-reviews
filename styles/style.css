@@ -16,28 +16,30 @@
 .nav__menu{
     list-style: none;
     display: flex;
-    gap: 3rem;
+    align-items: center;
+    gap: 4rem;
     
 }
 
 .nav__link:link,
 .nav__link:visited{
+    
     font-size: 1.4rem;
     text-decoration: none;
     font-weight: 500;
     color: #333;
     /* padding: 0.2rem 0.8rem 0rem; */
-    padding: .7rem 2rem;
-    transition: all 0.3s;
+     /* padding: .4rem 5rem;  */
+    transition: all 0.1s;
 }
 
 .nav__link:hover,
 .nav__link:active{
-    background-image:url('/img/hover.svg');
+    /* background-image:url('/img/hover.svg');  */
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #67c ;
     
 }
 
@@ -952,4 +954,5 @@ padding-bottom: 2rem;
     cursor: pointer;
 
 }
+
 
