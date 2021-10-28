@@ -231,31 +231,31 @@
 
    .img__box--one{
        
-        background-image: url('/img/DreamCloudBig.jpeg');
+        background-image: url('../img/DreamCloudBig.jpeg');
    }
    .img__box--two{
-       background-image: url('/img/nectarBig.jpeg');
+       background-image: url('../img/nectarBig.jpeg');
    }
    .img__box--third{
-    background-image: url('/img/puffyBif.jpeg');
+    background-image: url('../img/puffyBif.jpeg');
    }
    .img__box--fouth{
-       background-image: url('/img/cocoonBig.jpg');
+       background-image: url('../img/cocoonBig.jpg');
     }
     .img__box--fifth{
-        background-image: url('/img/saatvaBig.jpeg');
+        background-image: url('../img/saatvaBig.jpeg');
     }
     .img__box--sixth{
-        background-image: url('/img/ghosteBig.jpeg');
+        background-image: url('../img/ghosteBig.jpeg');
     }
     .img__box--seventh{
-        background-image: url('/img/layalaBig.jpeg');
+        background-image: url('../img/layalaBig.jpeg');
     }
     .img__box--eighth{
-        background-image: url('/img/awaraBig.jpeg');
+        background-image: url('../img/awaraBig.jpeg');
     }
     .img__box--ninth{
-        background-image: url('/img/levelSleepBig.jpeg');
+        background-image: url('../img/levelSleepBig.jpeg');
     }
 
     .logo__brand{
