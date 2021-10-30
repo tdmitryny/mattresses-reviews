@@ -273,7 +273,7 @@
     
     .reviews__description{
        display:grid;
-       flex-direction: row-reverse;
+       /* flex-direction: row-reverse; */
        grid-template-rows: 1fr 1fr;
        row-gap: 4rem;
        overflow: scroll;
