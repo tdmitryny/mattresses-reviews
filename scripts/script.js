@@ -4,7 +4,6 @@ const description = document.querySelectorAll('.description');
 const boxesContainer = document.querySelector('.wrapper');
 const seeMore = document.querySelector('.btn-more');
 
-
 //Drop down description
 const dropContent = function (e) {
     let clicked = e.target.closest('.read__more');
