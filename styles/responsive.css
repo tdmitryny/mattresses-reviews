@@ -335,4 +335,15 @@
         padding: 1.5rem 2.199999999999999rem 1.5rem 0.20000000000000284rem;
         
     }
+
+    .title__about-review{
+        font-size: 2rem;
+    }
+
+    .title__about-review::before{
+        width: 2.5rem;
+    height: 3.1rem;
+    top: -0.4rem;
+    left: 3.3rem;
+    }
 }
