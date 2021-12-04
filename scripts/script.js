@@ -64,9 +64,6 @@ setInterval(() => {
 
 
 
-
-
-
 //Frequently Asked Questions
 const questionBtn = document.querySelectorAll('.questions__btn');
 const questionContent = document.querySelectorAll('.questions__content');
