@@ -9,6 +9,10 @@
     padding: 0 4.8rem;
     margin-bottom: 5.8rem;
 }
+.logo__header{
+    width: 20rem;
+}
+
 .logo{
     max-width: 100%;
 }

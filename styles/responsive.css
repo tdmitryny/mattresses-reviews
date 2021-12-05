@@ -10,12 +10,11 @@
         font-size: 56.25%;
     }
 
-    .nav__menu{
+    /* .nav__menu{
         position: relative;
         
         top: 13rem;
         right: -6rem;
-        /* height: 100vh; */
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -101,6 +100,60 @@
         transform: rotate(-45deg);
         transition: ease .3s;
     }
+ */
+
+ /* Mobile Navigation Menu */
+
+
+ .logo{
+    width: 13rem;
+}
+
+ .nav{
+     position: relative;
+     background-color: #fff;
+     top: 20rem;
+     min-height: 10rem;
+     flex-direction: column;
+     align-items: flex-end;
+     width: 40rem;
+     right:-6rem;
+     padding: 2rem 0 2rem 0;
+ }
+
+ .nav__menu{
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fff;
+ }
+.nav__link{
+    position: relative;
+}
+
+
+
+
+.nav__link:link,
+.nav__link:visited{
+    
+    
+
+}
+
+
+.nav__link:active::before{
+    position: absolute;
+    content: '✔️';
+    top: 0rem;
+    left: -1.4rem;
+    
+    
+    
+}
+
+
+ 
+
 
 
     /* Title */

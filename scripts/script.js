@@ -101,6 +101,7 @@ const dateUpdates = function (day, mounth, year) {
 dateUpdates(date, stringMonth, year);
 
 
+
 //Year update footer
 const bottomYear = function () {
     const yearRight = document.getElementById('copy');
