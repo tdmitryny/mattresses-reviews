@@ -20,7 +20,7 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 3rem;
-        padding: 3.5rem 0 4rem 3rem;
+        padding: 3.5rem 2rem 4rem 3rem;
         box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.25);
         transition: ease .5s;
         transform: translateX(100%);
@@ -34,6 +34,7 @@
         pointer-events: auto;
         visibility: visible;
         transform: translateX(0);
+        width: 23rem;
         
     }
     .mobile__menu{
@@ -133,12 +134,7 @@
 
 
 
-.nav__link:link,
-.nav__link:visited{
-    
-    
 
-}
 
 
 .nav__link:active::before{
@@ -181,6 +177,7 @@
     html{
         font-size: 50.25%;
     }
+    
     .title__about{
         line-height: 1.3;
     }
@@ -284,31 +281,31 @@
 
    .img__box--one{
        
-        background-image: url('/img/DreamCloudBig.jpeg');
+        background-image: url('../img/DreamCloudBig.jpeg');
    }
    .img__box--two{
-       background-image: url('/img/nectarBig.jpeg');
+       background-image: url('../img/nectarBig.jpeg');
    }
    .img__box--third{
-    background-image: url('/img/puffyBif.jpeg');
+    background-image: url('../img/puffyBif.jpeg');
    }
    .img__box--fouth{
-       background-image: url('/img/cocoonBig.jpg');
+       background-image: url('../img/cocoonBig.jpg');
     }
     .img__box--fifth{
-        background-image: url('/img/saatvaBig.jpeg');
+        background-image: url('../img/saatvaBig.jpeg');
     }
     .img__box--sixth{
-        background-image: url('/img/ghosteBig.jpeg');
+        background-image: url('../img/ghosteBig.jpeg');
     }
     .img__box--seventh{
-        background-image: url('/img/layalaBig.jpeg');
+        background-image: url('../img/layalaBig.jpeg');
     }
     .img__box--eighth{
-        background-image: url('/img/awaraBig.jpeg');
+        background-image: url('../img/awaraBig.jpeg');
     }
     .img__box--ninth{
-        background-image: url('/img/levelSleepBig.jpeg');
+        background-image: url('../img/levelSleepBig.jpeg');
     }
 
     .logo__brand{
@@ -325,7 +322,7 @@
     
     .reviews__description{
        display:grid;
-       flex-direction: row-reverse;
+       /* flex-direction: row-reverse; */
        grid-template-rows: 1fr 1fr;
        row-gap: 4rem;
        overflow: scroll;
@@ -386,5 +383,16 @@
     .questions__btn{
         padding: 1.5rem 2.199999999999999rem 1.5rem 0.20000000000000284rem;
         
+    }
+
+    .title__about-review{
+        font-size: 2rem;
+    }
+
+    .title__about-review::before{
+        width: 2.5rem;
+        top: -0.4rem;
+        left: 3.3rem;
+        height: 3.1rem;
     }
 }

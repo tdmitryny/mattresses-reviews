@@ -62,7 +62,7 @@
 }
 
 .title__top{
-    background-image: url('/img/hover\ title.svg');
+    background-image: url('../img/hover\ title.svg');
     background-repeat: no-repeat;
     font-weight: 600;
     font-size: 3rem;
@@ -134,7 +134,7 @@
 
 
 .img__box--one{
-    background-image: url('/img/dreamcloud_1.jpg');
+    background-image: url('../img/dreamcloud_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -144,7 +144,7 @@
     align-items: center;
 }
 .img__box--two{
-    background-image: url('/img/nectar_1.jpg');
+    background-image: url('../img/nectar_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -154,7 +154,7 @@
     align-items: center;
 }
 .img__box--third{
-    background-image: url('/img/Puffy_1.jpg');
+    background-image: url('../img/Puffy_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -165,7 +165,7 @@
 }
 
 .img__box--fourth{
-    background-image: url('/img/cocoon_1.jpg');
+    background-image: url('../img/cocoon_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -176,7 +176,7 @@
 }
 
 .img__box--fifth{
-    background-image: url('/img/saatva_2.jpg');
+    background-image: url('../img/saatva_2.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -186,7 +186,7 @@
     align-items: center;
 }
 .img__box--sixth{
-    background-image: url('/img/ghost\ _1.jpg');
+    background-image: url('../img/ghost\ _1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -197,7 +197,7 @@
 }
 
 .img__box--seventh{
-    background-image: url('/img/layala_1.jpg');
+    background-image: url('../img/layala_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -208,7 +208,7 @@
 }
 
 .img__box--eighth{
-    background-image: url('/img/awara_1.jpg');
+    background-image: url('../img/awara_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -219,7 +219,7 @@
 }
 
 .img__box--ninth{
-    background-image: url('/img/levelsleep_1.jpg');
+    background-image: url('../img/levelsleep_1.jpg');
     background-position: center;
     background-size: cover;
     width:17.6rem;
@@ -304,7 +304,7 @@ padding-bottom: 2rem;
 .terms__inner::after{
     position: absolute;
     content: '';
-    background-image: url('/img/info.svg');
+    background-image: url('../img/info.svg');
     background-size: cover;
     width: 1.4rem;
     height: 1.3rem;
@@ -353,7 +353,7 @@ padding-bottom: 2rem;
 .read__more::after{
     position: absolute;
     content: '';
-    background-image: url('/img/arrow-right.svg');
+    background-image: url('../img/arrow-right.svg');
     width: 1.3rem;
     height: 1rem;
     top: 0.3rem;
@@ -364,7 +364,7 @@ padding-bottom: 2rem;
 .read__more.active::after{
     position: absolute;
     content: '';
-    background-image: url('/img/arrow-right.svg');
+    background-image: url('../img/arrow-right.svg');
     width: 1.3rem;
     height: 1rem;
     top: 0.3rem;
@@ -668,7 +668,7 @@ padding-bottom: 2rem;
 .title__about-review::before{
     content: '';
     position: absolute;
-    background-image: url('/img/mark3.png');
+    background-image: url('../img/mark3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -964,6 +964,15 @@ padding-bottom: 2rem;
     text-decoration: none;
     cursor: pointer;
 
+}
+
+
+/**************************/
+/* Terms of services*/
+/**************************/
+
+.questions__title-two  .terms__title{
+    padding-bottom: 22.3rem;
 }
 
 
