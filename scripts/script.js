@@ -109,7 +109,7 @@ bottomYear();
 
 
 //Drop down menu
-const navMenu = document.querySelector('.nav__menu');
+const navMenu = document.querySelector('.nav');
 const mobMenu = document.querySelector('.mobile__menu');
 
 
